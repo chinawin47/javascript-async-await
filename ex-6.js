@@ -8,7 +8,7 @@ let getJohnProfile = () => {
           age: 20,
           hobbies: ["Coding", "Football"],
         }),
-      1000
+      1000,
     );
   });
 };
@@ -27,9 +27,16 @@ let getJohnOrders = () => {
             items: ["orange", "itim"],
           },
         ]),
-      1500
+      1500,
     );
   });
 };
 
 // Start coding here
+async function userData() {
+  const johnProfile = await getJohnProfile();
+  console.log(johnProfile);
+  const johnOrder = await getJohnOrders();
+  console.log(johnOrder);
+}
+userData();

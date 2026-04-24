@@ -9,8 +9,12 @@ let getJohnProfile = () => {
           age: 20,
           hobbies: ["Coding", "Football"],
         }),
-      1000
+      1000,
     );
   });
 };
 // Start coding here
+const johnProfile = (data) => {
+  console.log(data);
+};
+getJohnProfile().then(johnProfile);

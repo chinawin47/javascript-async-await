@@ -7,9 +7,13 @@ let getJohnProfile = () => {
           errorCode: 500,
           message: "👿 Failed to request data from server",
         }),
-      2000
+      2000,
     );
   });
 };
 
 // Start coding here
+const johnProfile = (error) => {
+  console.log(error);
+};
+getJohnProfile().catch(johnProfile);
